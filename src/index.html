@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Cyro, de Lima, Cyro de Lima, javascript, python, angular, vue js, react, css, scss, java">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="path/to/font-mfizz/font-mfizz.css">
+
+  <link rel="icon" type="image/png" href="./assets/cyro.png?any=param">
+  <link rel="stylesheet" type="text/css" href ="style.css">
+  <title>WebPortfolio</title>
+
+</head>
+<body>
+  <section class="container">
+    <nav>
+      <div class="logo">portfolio<span class="dot"><b>.</b></span></div>
+      <ul class="navItems">
+        <li><a href="#top">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#projects">projects</a></li>
+
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/cyro-estevao-freire-de-lima/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/CyroEstevao/Projects" target="_blank"><i class="fab fa-github-square"></i></a>
+      </div>
+      <!-- <button id="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button> -->
+
+    </nav>
+
+    <div class="wrapper" id="top">
+      <div class="cols cols0">
+        <span class="topline">Hello</span>
+        <span class="main-text">I'm a <br>
+          <span class="multiText"></span></span>
+        <p>I'm Cyro. I implement high quality user experiences.</p>
+        <div class="btns"></div>
+        <button type="submit" onclick="window.open('assets/Cyro de Lima CV 2023.pdf')">download CV</button>
+      </div>
+      <div class="cols cols1">
+        <div class="imgbox" style="transform:rotate(180deg);">
+          <!-- <img src="./assets/blob.svg" class="splash"> -->
+          <img src="./assets/cyroNoBg.png">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typingEffect = new Typed(".multiText",{
+      strings : ["Coder", "Front-End", "Developer"],
+      loop : true,
+      typeSpeed : 100,
+      backSpeed : 80,
+      backDelay : 1500
+    })
+  </script>
+
+  <section class="about" id="about">
+    <div class="container-images">
+      <img src="./assets/Creator.svg" alt="">
+    </div>
+    <div class="container-texts">
+      <h2>about <span>Me</span></h2>
+      <span class="skill-header"> <span>Full-Stack</span> Developer</span>
+      <p class="par">I am <span class="text-pink"><b>Full-Stack</b></span> developer. <br>
+        I am a budding Software Engineer pursuing a Computer Science degree at the <span class="text-pink"><b>University of Colorado Boulder!</b></span><br>
+        I have a strong passion for both front-end and back-end development. 
+        I love to learn and experiment with new technologies!
+        <br>
+        <br>
+        <div class="text-pink"><b>Cyro de Lima</b></div>
+      </p>
+    </div>
+  </section>
+
+  <section class="services" id="projects">
+    <h1 class="text-center">Pro<span>jects</span></h1>
+    <div class="par-project"><p>Projecs on <a href="https://github.com/CyroEstevao/Projects" target="_blank">GitHub.com/CyroEstevao</a></p>
+    </div>
+
+    <div class="box">
+      <div class="card">
+        <em class="fa-solid fa-laptop-code"></em>        
+        <div class="skill-header">Experience</div>
+        <p>
+          Front-End Internship at Petwell<br>
+          <br>
+          <br>
+          <br>
+          Used Angular, CSS, JavaScript, Figma, and Git <br>
+          <br>
+          Created test driven code following BEM CSS methodology  
+        </p>
+      </div>
+      
+      <div class="card">
+        <em class="fa-brands fa-vuejs fa-4x"></em>
+        <div class="skill-header">Vue.js</div>
+        <p>
+          Developed a Weather API using Vue.js, CSS, HTML, Angular, and JavaScript<br>
+          <br>
+          Created a highly useful feature that switches between °F and °C
+          <br>
+          <br>
+          <a href="https://github.com/CyroEstevao/Projects" target="_blank"> Live Demo!</a>
+        </p>
+      </div>
+      <div class="card">
+        <em class="fa-solid fa-gamepad fa-4x"></em>
+        <div class="skill-header">Python</div>
+        <p>
+          Developed Space Invaders game using classes, methods and user design on pygame
+          <br>
+          <br>
+        </p>
+        <div class="skill-header">JavaScript</div>
+        <p>Developed Tic-Tac-Toe game using Javascript, HTML and CSS </p>
+      </div>
+      <div class="card">
+        <em class="fa-brands fa-dev fa-4x"></em>
+        <div class="skill-header">Front-End Development</div>
+        <p>
+          Developed several websites using CSS, HTML, Angular, React, and JavaScript<br>
+          <br>
+          Petwell website, my Portifolio, and E-Store website
+          <br>
+          <br>
+          <a href="https://github.com/CyroEstevao/Projects" target="_blank"> Code here!</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <div class="container-skills">
+      <h2><span>My</span> Skills</h2>
+      <div class="content-container">
+        <div class="content-skills">
+          <div class="skills-logo">
+            <div class="skill-icon"><em class="fa-brands fa-angular fa-4x"></em></div>
+            <div class="skill-text">Angular</div>
+          </div> 
+          <div class="skills-logo">
+            <div class="skill-icon"><em class="fa-brands fa-react fa-4x"></em></div>
+            <div class="skill-text">React</div>
+          </div>  
+          <div class="skills-logo">
+            <div class="skill-icon"><em class="fa-brands fa-js fa-4x"></em></div>
+            <div class="skill-text">JS</div>
+          </div>  
+          <div class="skills-logo">
+            <div class="skill-icon"><em class="fa-brands fa-css3 fa-4x"></em></div>
+            <div class="skill-text">CSS</div>
+          </div>  
+          <div class="skills-logo">
+            <div class="skill-icon"><em class="fa-brands fa-git-alt fa-4x"></em></div>
+            <div class="skill-text">Git</div>
+          </div>  
+          <div class="skills-logo">
+            <div class="skill-icon"><em class="fa-brands fa-vuejs fa-4x"></em></div>
+            <div class="skill-text">Vue.js</div>
+          </div>  
+          <div class="skills-logo">
+            <div class="skill-icon"><em class="fa-brands fa-html5 fa-4x"></em></div>
+            <div class="skill-text">HTML5</div>
+          </div>   
+        </div>
+        <div class="content-skills">
+
+          <div class="skills-logo">
+            <div class="skill-icon"><em class="fa-brands fa-python fa-4x"></em></div>
+            <div class="skill-text">Python</div>
+          </div> 
+          <div class="skills-logo">
+            <div class="skill-icon"><em class="fa-brands fa-java fa-4x"></em></div>
+            <div class="skill-text">Java</div>
+          </div>  
+          <div class="skills-logo">
+            <div class="skill-icon"><img src="./assets/icons8-c++-.png" alt="c++ icon" width="80" height="80"></div>
+            <div class="skill-text">C++</div>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container-email">
+    <form action="https://formsubmit.co/b8bfd9ee42092a1415d03be6f7991906" method="POST">
+      <h3>GET IN TOUCH</h3>
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" rows="3" placeholder="How can I help you?"></textarea>
+      <button type="submit">Send</button>
+    </form>
+    
+  </section>
+  <footer>
+    <div class="content-footer">
+      <h2>Cyro <span>de Lima</span></h2>
+      <p class="end">
+        © Cyro de Lima. All rights reserved. 
+      </p>
+    </div>
+  </footer>
+  <script src="/Users/cyroefl/Documents/IT/WebPortifolio/web-portfolio/src/script.js">
+  </script>
+  <app-root></app-root>
+</body>
+</html>
